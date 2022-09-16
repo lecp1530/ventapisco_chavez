@@ -1,0 +1,284 @@
+
+body{
+        margin: 0;
+        padding:0;
+        font-family: 'Source Sans Pro' , sans-serif;
+        background-color: beige;  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+main h1{
+    margin: 0;
+    padding: 30px;
+    background-color: beige;
+    font-size: 3.5rem; 
+	text-align: center; 
+	
+}
+
+ul,li{
+    list-style-type: none;    
+    display: inline-block;
+    overflow: auto;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color:#1c3643 ;
+    
+  }
+
+header{    
+    background-color: #1c3643;
+    
+    
+}
+
+header .img_header img{
+    width: 80px;
+    margin-top: 5px;
+    padding: 0;
+    margin-bottom: 5px;
+    
+}
+
+nav{
+    display: inline-block;
+    margin-left: 60%;
+    margin-right: 90px;    
+}
+
+.img_header{ 
+    margin-top: 5px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+nav ul{
+    display: block;
+}
+
+nav ul li{
+    margin-right: 30px;
+    margin-bottom: 20px;
+    display: inline-block;    
+    position: relative;
+}
+
+
+
+.img_main{
+    display: inline;    
+}
+
+.img_main img{
+    margin: 0;
+    padding: 0;    
+    width: 49.5%;
+    
+    
+}
+
+footer{
+    display: block;
+    background-color:#1c3643 ;
+    
+}
+
+footer .logo_footer{
+    margin: 0;
+    width: 49%;
+    display: inline-block;
+        
+}
+
+footer .logo_footer img {
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+footer .redes{
+    margin: 0;
+    padding-top: 20px;
+    width: 49%;
+    display: inline-block;
+    color: white;
+    
+}
+
+.introduccion{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.redes{
+    display: inline;    
+    text-align: right;
+}
+
+.redes .redes_detalle{
+    display: inline;
+    margin-left: 50%;
+}
+
+.redes .redes_detalle img{
+    text-align: right;
+    width: 40px;
+}
+
+.redes .redes_detalle h5{
+    
+    margin-left: 590px;
+}
+
+img {
+    color: red;
+}
+img .instagram{
+    color: red;
+    background-color: red;
+}
+
+.fb {
+    color: red;
+    background-color: red;
+}
+
+
+.introduccion_article_somos{
+    font-size: 1rem;
+}
+
+.mision_article_detalle{
+    font-size: 1rem;
+}
+
+.productos_title p{
+    font-size: 1.5rem;
+    color: #000fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.productos_images img{
+    width: 33%;
+    height: 600px;
+}
+
+.contacto{
+    margin-left: 30px;
+    text-align: center;
+    
+}
+
+.contacto_form{ 
+    text-align: center;
+    margin-left: 35px;
+    margin-bottom: 85px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contacto_form label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.contacto_form input,textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.intro_produccion p{
+    font-size: 1.5rem;
+    color: #000fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.proceso_vino{
+    display: inline-block;
+}
+
+.proceso_vino_imgs img{    
+    width: 33%;
+    height: 450px;
+}
+
+.proceso_pisco{
+    display: inline-block;    
+    margin-bottom: 100px;
+}
+
+.proceso_pisco_imgs img{    
+    width: 33%;
+    height: 450px;
+}
+
+.mapa{
+    text-align: center;
+}
+
+.restaurante_local div{
+    display: inline;
+}
+
+.restaurante_local div p{
+    display: inline-block;    
+    margin-left: 100px;
+    margin-top: 0;
+    padding-right: 100px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    overflow: auto;
+    width: 500px;
+}
+
+.restaurante_local img {
+    width: 500px;
+}
+
+.platos{
+    display: block;
+    margin-bottom: 60px;
+}
+
+.platos img {
+    margin-left: 35%;
+}
+
+.contacto_form{
+    background-image: url("../img/fundo_img.jpeg");    
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+
+.ubicanos h3{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.restaurante_local .texto_local p{
+    
+    text-align: center;
+    margin: 0;
+    margin-bottom: 70px;
+}

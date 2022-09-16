@@ -1,0 +1,647 @@
+
+body{
+        margin: 0;
+        padding:0;
+        font-family: 'Source Sans Pro' , sans-serif;
+        background-color: beige;  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+
+ul,li{
+    list-style-type: none;    
+   
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color:#1c3643 ;
+    
+  }
+
+@media only screen and (min-width:768px) and (max-width:2000px){
+
+.gridContainer{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto 100px;
+}
+
+header{    
+    grid-area: header;
+    background-color: #1c3643; 
+}
+
+main{
+    grid-area: main;
+}
+
+section{
+    grid-area: section;
+}
+
+footer{
+    grid-area: footer;
+    background-color:#1c3643 ;    
+}
+
+.headerFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.navFlex{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	justify-content: flex-end; /*organizar los elementos:  center, flex-start, flex-end, space-around, space-between, spave-evenly */
+}
+
+.navFlex li {
+    list-style-type: none;
+    padding: 20px;
+    font-size: 20px; }
+
+.navFlex li a {text-decoration: none;}
+
+header img {	
+    width: 80px;
+    margin-top: 5px;    
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.footerFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    width: 50px;    
+}
+
+.footerimgFlex{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redesFlex{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h5{
+    color: white;    
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mainGrid{
+    display:grid;    
+    grid-template-areas: 
+    "titulo titulo"
+    "foto1 foto1";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+
+.mainFlex{grid-area: titulo;
+        text-align: center;
+        font-size: 1.5rem; }
+.img_main1{grid-area: foto1;}
+.img_main2{grid-area: foto2;}
+
+.img_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 550px;
+}
+
+.contenidoFlex{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.prodContainer{
+    display: grid;
+    grid-template-areas: 
+    "header header header"    
+    "psection psection psection"
+    "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto 100px ;
+}
+
+.productosFlex{
+    grid-area: psection;
+}
+
+.productos_title p{
+    font-size: 1.5rem;
+    color: #000fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.productos_images_grid{
+    display: grid;
+    grid-template-areas: 
+   "prod1 prod2 prod3"
+   "prod4 prod5 prod6";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 620px 620px ;
+    margin-bottom: 20px;
+}
+
+.prod1{grid-area: prod1;}
+.prod2{grid-area: prod2;}
+.prod3{grid-area: prod3;}
+.prod4{grid-area: prod4;}
+.prod5{grid-area: prod5;}
+.prod6{grid-area: prod6;}
+
+.productos_images_grid img{    
+    width: 98%;    
+    height: 600px;
+    padding: 20px;    
+}
+
+.procesoGrid{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "intro_produccion intro_produccion"
+    "proceso_vino proceso_vino"
+    "proceso_pisco proceso_pisco"
+    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.intro_produccion{grid-area: intro_produccion;}
+
+.proceso_vino{
+    grid-area: proceso_vino;
+
+}
+.proceso_pisco{grid-area: proceso_pisco;
+    margin-bottom: 20px;    
+}
+
+.intro_produccion p{
+    font-size: 1.5rem;
+    color: #000fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.proceso_vino_imgs img{    
+    width: 33%;
+    height: 450px;
+}
+
+.proceso_vino_imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.proceso_pisco_imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.proceso_pisco_imgs img{    
+    width: 33%;
+    height: 350;
+}
+
+.contactoGrid{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "contacto contacto"
+    "contacto_form contacto_form"    
+    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.contacto{
+    grid-area: contacto;
+    text-align: center;
+}
+.contacto_form{
+    grid-area: contacto_form;
+    text-align: center;    
+    font-family: Arial, Helvetica, sans-serif;
+   width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+.contacto_form label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;    
+}
+
+.contacto_form input,textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ubicaGrid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "ubicanos"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+.ubicanos{ grid-area: ubicanos;
+    text-align: center;}
+
+.mapa{
+    text-align: center;
+}
+
+.restaurante_local{
+    text-align: center;
+}
+.restaurante_local img {
+    width: 500px;
+    
+}
+
+
+.texto_local{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texto_local p {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.platos{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.platos img {
+    text-align: center;
+}
+
+} 
+
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:844px){	
+    
+.gridContainer{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "section"
+    " footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto 100px;
+}
+
+h1{
+    font-size: 30px;
+}
+header{    
+    grid-area: header;
+    background-color: #1c3643; 
+}
+
+main{
+    grid-area: main;
+}
+
+section{
+    grid-area: section;
+}
+
+footer{
+    grid-area: footer;
+    background-color:#1c3643 ;    
+}
+
+.navFlex{
+	display: flex;
+	flex-direction: row;	
+	justify-content: space-evenly; /*organizar los elementos:  center, flex-start, flex-end, space-around, space-between, spave-evenly */
+    
+    margin-left: 0;
+}
+
+.navFlex li {
+    list-style-type: none;
+    font-size: 15px; }
+
+.navFlex li a {text-decoration: none;}
+
+header img{	    
+    display:none;    
+}
+
+.footerFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    width: 50px;    
+}
+
+.footerimgFlex{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redesFlex{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h5{
+    display: none;
+}
+
+.mainGrid{
+    display:grid;    
+    grid-template-areas: 
+    "titulo"
+    "foto1";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.mainFlex{grid-area: titulo;
+        text-align: center;
+        font-size: 1.5rem; }
+
+.img_main1{grid-area: foto1;
+    width: 100%;
+    height: 250px;}
+.img_main2{display: none;
+    }
+
+.img_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 250px;
+}
+
+.contenidoFlex{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.prodContainer{
+    display: grid;
+    grid-template-areas: 
+    "header header header"    
+    "psection psection psection"
+    "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.productosFlex{
+    grid-area: psection;
+}
+
+.productos_title p{
+    font-size: 1.5rem;
+    color: #000fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.productos_images_grid{
+    display: grid;
+    grid-template-areas: 
+   "prod1 prod2 prod3"
+   "prod4 prod5 prod6";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto ;
+    margin-bottom: 20px;    
+    align-items:stretch;
+    justify-content: space-evenly;
+}
+
+.prod1{grid-area: prod1;
+    margin-bottom:10px;
+}
+.prod2{grid-area: prod2;
+    margin-bottom:10px;}
+.prod3{grid-area: prod3;
+    margin-bottom:10px;}
+.prod4{grid-area: prod4;}
+.prod5{grid-area: prod5;}
+.prod6{grid-area: prod6;}
+
+.productos_images_grid img{    
+    width: 98%;    
+    height: 200px;
+     
+}
+
+.procesoGrid{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "intro_produccion intro_produccion"
+    "proceso_vino proceso_vino"
+    "proceso_pisco proceso_pisco"
+    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.intro_produccion{grid-area: intro_produccion;}
+
+.proceso_vino{
+    grid-area: proceso_vino;
+
+}
+.proceso_pisco{grid-area: proceso_pisco;
+    margin-bottom: 20px;    
+}
+
+.intro_produccion p{
+    font-size: 1.5rem;
+    color: #000fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.proceso_vino_imgs img{    
+    width: 50%;
+    height: 150px;
+}
+
+.proceso_vino_imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.proceso_pisco_imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.procesoimg3, .procesoimg6{
+    display: none;
+}
+
+.proceso_pisco_imgs img{    
+    width: 50%;
+    height: 150px;
+}
+
+.contactoGrid{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "contacto contacto"
+    "contacto_form contacto_form"    
+    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.contacto{
+    grid-area: contacto;
+    text-align: center;
+}
+.contacto_form{
+    grid-area: contacto_form;
+    text-align: center;    
+    font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../img/fundo_img.jpeg");    
+   width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+.contacto_form label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;    
+}
+
+.contacto_form input,textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ubicaGrid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "ubicanos"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+.ubicanos{ 
+    grid-area: ubicanos;
+    text-align: center;}
+
+.mapa{
+    text-align: center;
+    width: 100%;    
+}
+
+.mapa img{
+    width: inherit;
+}
+
+.restaurante_local{
+    text-align: center;
+    width: 100%;
+}
+.restaurante_local img {    
+    display: none;
+}
+
+.texto_local{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texto_local p {
+    width: 100%;
+    padding: 5px;
+}
+
+.platos{
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.platos img {
+    text-align: center;
+    width: 100%;
+    margin: 2px;
+}
+}
