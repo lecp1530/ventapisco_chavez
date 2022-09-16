@@ -101,8 +101,14 @@ header img {
 }
 
 footer img{
-    width: 50px;    
+    width: 50px; 
 }
+
+footer .footerimgFlex img{
+    width: 50px; 
+    transform: rotateZ(-30deg) ;   
+}
+
 
 .footerimgFlex{
     width: 30%;
@@ -135,11 +141,37 @@ h5{
     grid-template-rows: auto auto;
 }
 
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    40% {
+        opacity: 0.5;
+      }
+    100% {
+      opacity: 1;
+    }
+}
+
 .mainFlex{grid-area: titulo;
         text-align: center;
         font-size: 1.5rem; }
-.img_main1{grid-area: foto1;}
-.img_main2{grid-area: foto2;}
+
+.img_main1{grid-area: foto1;
+
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-name: aparecer;
+
+    
+     }
+
+.img_main2{grid-area: foto2;
+
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-name: aparecer;
+}
 
 .img_main{
     display: flex;
@@ -229,6 +261,7 @@ h5{
 .proceso_vino_imgs img{    
     width: 33%;
     height: 450px;
+    transition: height 3s;
 }
 
 .proceso_vino_imgs{
@@ -236,6 +269,13 @@ h5{
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
+.proceso_vino_imgs img:hover{    
+    width: 33%;
+    height: 650px;
+   
+}
+
 
 .proceso_pisco_imgs{
     display: flex;
@@ -267,7 +307,8 @@ h5{
     grid-area: contacto_form;
     text-align: center;    
     font-family: Arial, Helvetica, sans-serif;
-   width: 100%;
+    background-image: linear-gradient(to bottom, rgb(0, 60, 255),rgb(80, 165, 180));
+    width: 100%;
     margin: 0;
     margin-bottom: 10px;
     color: white;
@@ -299,7 +340,9 @@ h5{
 
 .mapa{
     text-align: center;
+    
 }
+
 
 .restaurante_local{
     text-align: center;
@@ -309,7 +352,9 @@ h5{
     
 }
 
-
+.imgfundo1{
+    transform: translateX(-40px);
+}
 .texto_local{
     display: flex;
     flex-direction: row;
@@ -368,6 +413,11 @@ section{
 footer{
     grid-area: footer;
     background-color:#1c3643 ;    
+}
+
+.footerFlex img {
+    transform: rotateZ(-30deg) ;  
+
 }
 
 .navFlex{
@@ -573,8 +623,9 @@ h5{
     grid-area: contacto_form;
     text-align: center;    
     font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../img/fundo_img.jpeg");    
-   width: 100%;
+/*  background-image: url("../img/fundo_img.jpeg");    */
+    background-image: linear-gradient(to bottom, rgb(0, 60, 255),rgb(80, 165, 180));
+    width: 100%;
     margin: 0;
     margin-bottom: 10px;
     color: white;
@@ -645,3 +696,4 @@ h5{
     margin: 2px;
 }
 }
+
