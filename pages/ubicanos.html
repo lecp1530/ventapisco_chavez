@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/index.css">
 	<link rel="shortcut icon" type="image/jpg" href="../img/uva_logo.jpg"/>
     <title>Ubícanos</title>
@@ -12,18 +13,35 @@
 
     <div class="ubicaGrid">
         
-        <header class="headerFlex">
-            <img src="../img/uva_logo.jpg" alt="">        
-                <ul class="navFlex">
-                    <li class="navFlex__item1"><a href="../index.html">Home</a></li>
-                    <li class="navFlex__item2"><a href="../pages/productos.html">Productos</a>                 
-                    </li>
-                    <li class="navFlex__item3"><a href="../pages/produccion.html">Producción</a></li>
-                    <li class="navFlex__item4"><a href="../pages/contacto.html">Contacto</a></li>
-                    <li class="navFlex__item5"><a href="../pages/ubicanos.html">Ubícanos</a></li>				
-                </ul>			      
-            
-        </header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="img_uva" src="../img/uva_logo.jpg" alt="">
+              </a>          
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="../pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="../pages/produccion.html">Producción</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="../pages/ubicanos.html">Ubícanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
         <section class="ubicanos">
             <h3>Ubícanos en la siguiente dirección:</h3>
@@ -46,33 +64,45 @@
                 
             </div> 
 
-            <div class="platos">
-                <h3>Podrás probar los mejores platos peruanos</h3> 
-                <img src="../img/fundo2.jpg" alt="">			
-            </div>		
+       
+            <div class="container">
+              <div class="row paddingTB">
+                <section class="col-lg-6 col-xs-12">
+                  <h3>Podrás probar los mejores platos peruanos</h3> 
+                  <p>En este restaurante preparamos los platos más ricos de la ciudad!
+                    Ven y prepárate para desgustar una variedad de platos y postres a la carta
+                    Puedes venir con tu familia o amigos y estar todo el día, hay menu, buffet, 
+                    juegos inflables y un bar por la noche para divertirte y pasarla muy bien.
+                    Adicionalmente, contamos con servicio de taxi y movilidad para ir a los lugares
+                    turísticos de la ciudad, garantizando seguridad en la movilidad a nuestros
+                    comensales.
+                  </p>
+                </section>
+                <section class="col-lg-6 col-xs-12">
+                  <img src="../img/fundo2.jpg" alt="irving" class="img-fluid">
+                </section>
+              </div>
+            </div>
             
         </section>
 
 
-        <footer class="footerFlex">   
-            
-            <div class="footerimgFlex">
+        <div class="container-fluid">
+            <footer class="row footerBg paddingTB">
+              <div class="col-lg-4 col-xs-12 d-flex justify-content-center">
                 <img src="../img/uva_logo.jpg" alt="">
-            </div>               
-            
-            <div class="redesFlex">
-                <div class="redes_detalle">                
-                    <a class="'fb"  href="www.facebook.com">
-                        <img src="../img/fb.png" alt="facebook"></a>
-                    <a class="'instagram"  href="www.instagram.com">
-                        <img src="../img/insta.png" alt="instagram"></a>
-                    
-                </div>
-            </div>
-            
-            <h5>Designed by <b> @lecp</h5>       
-            
-        </footer>
+              </div>
+              <div class="col-lg-4 col-xs-12 d-flex justify-content-center">
+                <a class="'fb"  href="www.facebook.com">
+                    <img src="../img/fb.png" alt="facebook"></a>
+                <a class="'instagram"  href="www.instagram.com">
+                    <img src="../img/insta.png" alt="instagram"></a>  
+              </div>
+              <div class="mention col-lg-4 col-xs-12 d-flex justify-content-center">
+                <h5>Designed by <b> @lecp</h5>      
+              </div>
+            </footer>
+          </div>
     </div>
 </body>
 </html>

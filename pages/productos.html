@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/index.css">
 	<link rel="shortcut icon" type="image/jpg" href="../img/uva_logo.jpg"/>
     <title>Fundo Ica</title>
@@ -12,56 +13,117 @@
 
     <div class="prodContainer">
 
-        <header class="headerFlex">
-            <img src="../img/uva_logo.jpg" alt="">        
-                <ul class="navFlex">
-                    <li class="navFlex__item1"><a href="../index.html">Home</a></li>
-                    <li class="navFlex__item2"><a href="../pages/productos.html">Productos</a>                 
-                    </li>
-                    <li class="navFlex__item3"><a href="../pages/produccion.html">Producción</a></li>
-                    <li class="navFlex__item4"><a href="../pages/contacto.html">Contacto</a></li>
-                    <li class="navFlex__item5"><a href="../pages/ubicanos.html">Ubícanos</a></li>				
-                </ul>			      
-            
-        </header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="img_uva" src="../img/uva_logo.jpg" alt="">
+              </a>          
+           
+              <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="../pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="../pages/produccion.html">Producción</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="../pages/ubicanos.html">Ubícanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
         <section class="productosFlex">
             <div class="productos_title">
                 <p>Actualmente contamos con los siguientes productos para el público en general:</p>
             </div>
-            <div class="productos_images_grid">
-                <img class="prod1" src="../img/pisco_acholado.webp" alt="">
-                <img class="prod2" src="../img/pisco_quebranta.jpg" alt="">
-                <img class="prod3" src="../img/vino_blanco.jpg" alt="">
-                <img class="prod4" src="../img/borgona.png" alt="">
-                <img class="prod5" src="../img/vino_tinto.jpg" alt="">
-                <img class="prod6" src="../img/vino_rose.jpg" alt="">
-            </div>
+       
         </section>
 
+        <div class="container">
+          <div class="row paddingTB">
+          <div class="card col-lg-4 paddingTB2" >
+            <img src="../img/pisco_acholado.webp" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pisco Acholado</h5>
+              <p class="card-text">El pisco más suave</p>
+              
+            </div>
+          </div>
+          <div class="card col-lg-4 paddingTB2" >
+            <img src="../img/pisco_quebranta.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pisco Quebranta</h5>
+              <p class="card-text">Para los guerreros</p>
+              
+            </div>
+          </div>
+          <div class="card col-lg-4 paddingTB2" >
+            <img src="../img/vino_blanco.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Vino Blanco</h5>
+              <p class="card-text">Vino para acompañar pastas</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
         
-        <footer class="footerFlex">        
+      <div class="container">
+        <div class="row paddingTB">
+        <div class="card col-lg-4 paddingTB2" >
+          <img src="../img/borgona.png" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vino Borgoña</h5>
+            <p class="card-text">El vino más dulce</p>
             
-            <div class="footerimgFlex">
+          </div>
+        </div>
+        <div class="card col-lg-4 paddingTB2" >
+          <img src="../img/vino_tinto.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vino Tinto</h5>
+            <p class="card-text">Para los amantes del sabor</p>
+            
+          </div>
+        </div>
+        <div class="card col-lg-4 paddingTB2" >
+          <img src="../img/vino_rose.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vino Rose</h5>
+            <p class="card-text">Para los amorosos</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        
+        <div class="container-fluid">
+            <footer class="row footerBg paddingTB">
+              <div class="col-lg-4 col-xs-12 d-flex justify-content-center">
                 <img src="../img/uva_logo.jpg" alt="">
-            </div>
-            
-            
-            
-            <div class="redesFlex">
-                <div class="redes_detalle">                
-                    <a class="'fb"  href="www.facebook.com">
-                        <img src="../img/fb.png" alt="facebook"></a>
-                    <a class="'instagram"  href="www.instagram.com">
-                        <img src="../img/insta.png" alt="instagram"></a>
-                    
-                </div>
-            </div>
-            
-            <h5>Designed by <b> @lecp</h5>
-            
-            
-        </footer>
+              </div>
+              <div class="col-lg-4 col-xs-12 d-flex justify-content-center">
+                <a class="'fb"  href="www.facebook.com">
+                    <img src="../img/fb.png" alt="facebook"></a>
+                <a class="'instagram"  href="www.instagram.com">
+                    <img src="../img/insta.png" alt="instagram"></a>  
+              </div>
+              <div class="mention col-lg-4 col-xs-12 d-flex justify-content-center">
+                <h5>Designed by <b> @lecp</h5>      
+              </div>
+            </footer>
+          </div>
     </div>
 </body>
 </html>
