@@ -16,6 +16,9 @@ h6{
     font-weight: bold;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: aqua;    
+}
 
 ul,li{
     list-style-type: none;      
@@ -41,6 +44,23 @@ footer img{
 .mention h5{
     color: white;
 }
+
+.contacto{
+    grid-area: contacto;
+    text-align: center;
+}
+.contacto_form{
+    grid-area: contacto_form;
+    text-align: center;    
+    font-family: Arial, Helvetica, sans-serif;  
+   width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(0, 60, 255),rgb(80, 165, 180));
+}
+
 
 @media only screen and (min-width:768px) and (max-width:2000px){
 
@@ -118,6 +138,7 @@ footer img{
 
 .proceso_vino_imgs img{   
     height: 150px;
+    transition: height 3s;
 }
 
 .vino{
@@ -131,20 +152,6 @@ footer img{
 }
 
 
-.contacto{
-    grid-area: contacto;
-    text-align: center;
-}
-.contacto_form{
-    grid-area: contacto_form;
-    text-align: center;    
-    font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../img/fundo_img.jpeg");    
-   width: 100%;
-    margin: 0;
-    margin-bottom: 10px;
-    color: white;
-}
 
 
 .contacto_form label{
@@ -182,7 +189,7 @@ footer img{
 }
 
 /*vista mobile*/
-@media only screen and (min-width:0px) and (max-width:844px){	
+@media only screen and (max-width:768px){	
     
 h1{
     font-size: 30px;
@@ -208,6 +215,78 @@ h1{
     margin-top: 15px;
 }
 
+.mainFlex h1{
+    text-align: center;
 }
+
+.introduccion_article h3{
+    margin-top: 15px;
+}
+
+.mision_article h3{
+    margin-top: 15px;
+}
+
+.productos_title p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.productos_imgs img{
+    height: 480px;    
+    justify-content: center;
+    
+}
+
+.productos_imgs{
+    margin-bottom: 20px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.intro_produccion{
+    text-align: center;
+    font-weight: bold;
+}
+
+.ubicanos{
+    text-align: center;
+}
+
+.mapa{
+    width: 100%;    
+} 
+
+.mapa img{
+    width: inherit;
+}
+
+.restaurante_local{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.texto_local{
+    width: 100%;
+}
+
+.texto_local img{
+    width: inherit;
+}
+
+.container{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+}
+
 
 
