@@ -1,49 +1,13 @@
 
-body{
-        margin: 0;
-        padding:0;
-        font-family: 'Source Sans Pro' , sans-serif;
-        background-color: beige;  
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-}
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
     color: aqua;    
-}
-
-ul,li{
-    list-style-type: none;      
-}
-
-ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    background-color: white;
-    color:#1c3643 ;
 }
 
 .container-fluid{        
     background-color: #1c3643; 
 }
 
-footer img{
-    width: 50px;    
-}
-.mention h5{
-    color: white;
-}
 
 .contacto{
     grid-area: contacto;
