@@ -4,11 +4,33 @@ footer img {
 .mention h5 {
   color: white; }
 
+.b-logo {
+  width: 80px; }
+
+.b-fb {
+  width: 70px; }
+
+.b-instagram {
+  width: 72px; }
+
+.mapa, .mapa img {
+  width: 100%; }
+
+.mapa img {
+  background-color: red; }
+
+.texto_local, .texto_local img {
+  width: 100%; }
+
+.contacto_form {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro' , sans-serif;
-  background-color: beige; }
+  background-color: #fdfdee; }
 
 h1,
 h2,
@@ -29,3 +51,149 @@ ul li a {
 a:hover {
   background-color: white;
   color: #1c3643; }
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+  color: aqua; }
+
+.container-fluid {
+  background-color: #1c3643; }
+
+.contacto {
+  grid-area: contacto;
+  text-align: center; }
+
+.contacto_form {
+  grid-area: contacto_form;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-image: linear-gradient(to bottom, #003cff, #50a5b4); }
+
+@media only screen and (min-width: 768px) and (max-width: 2000px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; }
+  .navbar-nav a {
+    color: white;
+    font-size: 1.2rem; }
+  .img_uva {
+    width: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px; }
+  .paddingTB {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .mainGrid {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .mainFlex {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 1.5rem; }
+  .carousel-item {
+    padding: 50px;
+    padding-left: 300px;
+    padding-right: 300px; }
+  .carousel-item img {
+    height: 500px; }
+  .contenidoFlex {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .introduccion_article_somos {
+    font-size: 20px; }
+  .mision_article_detalle {
+    font-size: 20px; }
+  .productos_title p {
+    font-size: 1.5rem;
+    color: #000fff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px; }
+  .card img {
+    height: 500px; }
+  .paddingTB2 {
+    padding-right: 10px; }
+  .intro_produccion p {
+    font-size: 1.5rem;
+    color: #000fff;
+    font-weight: bold;
+    text-align: center; }
+  .proceso_vino_imgs img {
+    height: 150px;
+    transition: height 3s; }
+  .vino {
+    margin-bottom: 40px;
+    background-color: cadetblue; }
+  .pisco {
+    margin-bottom: 40px;
+    background-color: cadetblue; }
+  .contacto_form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; }
+  .contacto_form input, textarea {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .ubicanos {
+    text-align: center;
+    margin-bottom: 30px; }
+  .mapa, .mapa img {
+    text-align: center;
+    margin-bottom: 30px; }
+  .mapa img {
+    height: 500px; }
+  .col-lg-6 p {
+    margin-top: 50px; }
+  .restaurante_local {
+    margin-bottom: 30px; } }
+
+/*vista mobile*/
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px; }
+  .img_uva {
+    display: none; }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*organizar los elementos:  center, flex-start, flex-end, space-around, space-between, spave-evenly */
+    margin-left: 0; }
+  .carousel-item {
+    padding: 50px; }
+  .container-fluid footer div {
+    align-items: center;
+    margin-top: 15px; }
+  .mainFlex h1 {
+    text-align: center; }
+  .introduccion_article h3 {
+    margin-top: 15px; }
+  .mision_article h3 {
+    margin-top: 15px; }
+  .productos_title p {
+    text-align: center;
+    font-weight: bold; }
+  .productos_imgs img {
+    height: 480px;
+    justify-content: center; }
+  .productos_imgs {
+    margin-bottom: 20px; }
+  .card-title {
+    text-align: center; }
+  .card-text {
+    text-align: center; }
+  .intro_produccion {
+    text-align: center;
+    font-weight: bold; }
+  .ubicanos {
+    text-align: center; }
+  .restaurante_local {
+    margin-top: 15px;
+    text-align: center; }
+  .container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center; } }

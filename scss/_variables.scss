@@ -1,0 +1,47 @@
+
+
+$redes:(
+    logo: 80px,
+    fb: 70px,
+    instagram: 72px
+
+);
+
+@each $red , $size in $redes{
+    .b-#{$red}{
+        width: $size;
+    }
+}
+
+
+$estilos:(
+    color: #1c3643,
+    margin: 0,
+    padding: 0
+);
+    
+.mapa{
+    width: 100%;    
+} 
+
+.mapa img{
+    @extend .mapa;
+    background-color: red;
+}
+
+.texto_local{
+    width: 100%;
+}
+
+.texto_local img{
+    @extend .texto_local;
+}
+
+@mixin margins($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+.contacto_form{
+    @include margins(10px,10px);
+}
